@@ -1,36 +1,19 @@
 import React from "react";
-import { styled } from "styled-components";
-
-const Container = styled.div`
-  position: absolute;
-  width: 100vw;
-  display: flex;
-  background-color: transparent;
-  border-bottom-left-radius: 30%;
-  border-bottom-right-radius: 30%;
-  color: white;
-  font-family: roboto;
-  box-shadow: 3px 3px 3px 3px black;
-
-  h1 {
-    font-weight: bold;
-  }
-`;
+import { Link } from "react-router-dom";
 
 export default function NavarComponent() {
   return (
-    <main>
-      <Container>
-        <h1>Portfolio</h1>
-        <div>
-          <ul>
-            <li>About me</li>
-            <li>Skills</li>
-            <li>Experience</li>
-            <li>Contact</li>
-          </ul>
-        </div>
-      </Container>
-    </main>
+    <header className="header">
+      <Link to="/" className="logo">
+        ELÍAS <span style={{color: "aqua"}}>B.</span>
+      </Link>
+      <nav className="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
   );
 }
