@@ -13,13 +13,13 @@ export default function ContactView() {
   return (
     <Container>
       <div className="col-left">
-        <h1 className="sub-title">Contact me</h1>
+        <h1 className="sub-title">Contacta me</h1>
         <p>
-          <GrMail className="icons" />
+          <GrMail className="icons-contact" />
           elias013dr@gmail.com
         </p>
         <p>
-          <BsFillTelephoneFill className="icons" />
+          <BsFillTelephoneFill className="icons-contact" />
           653 14 32 17
         </p>
         <div className="contact-sci">
@@ -36,17 +36,17 @@ export default function ContactView() {
 
         <div className="btn-box">
           <a href={PDFCV} download>
-            Download CV
+            Descragar CV
           </a>
         </div>
       </div>
       <div className="col-right">
         <form>
-          <input type="text" placeholder="Your Name" required />
-          <input type="text" placeholder="Your email" required />
-          <textarea name="Message" rows="6" placeholder="Your Message" />
+          <input type="text" placeholder="Nombre" required />
+          <input type="text" placeholder="Email" required />
+          <textarea name="Message" rows="6" placeholder="Mensage" />
           <button type="submit" className="btn-form">
-            Submit
+            Enviar
           </button>
         </form>
       </div>

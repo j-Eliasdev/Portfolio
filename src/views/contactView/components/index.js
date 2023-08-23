@@ -3,7 +3,8 @@ import { styled } from "styled-components";
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  height: 100vh;
+  justify-content: space-between;
+  min-height: 100vh;
   padding: 0 10%;
 
   .sub-title {
@@ -62,7 +63,7 @@ export const Container = styled.div`
   .col-left p {
     margin-top: 30px;
   }
-  .icons {
+  .icons-contact {
     color: aqua;
     margin-right: 15px;
     font-size: 20px;
@@ -148,5 +149,13 @@ export const Container = styled.div`
     overflow: hidden;
     cursor: pointer;
     transition: 0.5s;
+  }
+
+  @media (max-width: 990px) {
+    display: block;
+    padding: 30px 10%;
+    .col-left {
+      height: fit-content;
+    }
   }
 `;
