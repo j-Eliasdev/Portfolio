@@ -7,7 +7,7 @@ import {
   GrMail,
 } from "react-icons/gr";
 import { BsFillTelephoneFill } from "react-icons/bs";
-import PDFCV from '../../assets/img/my-cv.pdf'
+import PDFCV from "../../assets/img/my-cv.pdf";
 
 export default function ContactView() {
   return (
@@ -42,13 +42,14 @@ export default function ContactView() {
       </div>
       <div className="col-right">
         <form>
-          <input type="text" placeholder="Nombre" required />
-          <input type="text" placeholder="Email" required />
+          <input type="text" name="Name" placeholder="Nombre" required />
+          <input type="email" name="Email" placeholder="Email" required />
           <textarea name="Message" rows="6" placeholder="Mensage" />
           <button type="submit" className="btn-form">
             Enviar
           </button>
         </form>
+        <span id="msg">Tú mensaje se ha enviado correctamente!</span>
       </div>
     </Container>
   );

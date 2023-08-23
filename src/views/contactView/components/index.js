@@ -168,6 +168,13 @@ export const Container = styled.div`
   .btn-form:hover::before {
     width: 100%;
   }
+  #msg{
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #14A44D;
+  }
 
   @media (max-width: 990px) {
     display: block;
