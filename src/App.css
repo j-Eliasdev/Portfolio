@@ -69,6 +69,7 @@ body {
   font-weight: bold;
   text-decoration: none;
   margin-left: 40px;
+  transition: .9s ;
 }
 
 #check {
@@ -85,10 +86,19 @@ body {
 }
 
 footer .cr-con {
+  position: relative;
+
   background-color: #122543;
   color: white;
   padding: 1rem 4rem;
   text-align: center;
+}
+footer a {
+  position: absolute;
+  color: white;
+  font-size: x-large;
+  right: 1.5rem;
+  transition: .5s ease;
 }
 
 /* BREAKPOINT */
