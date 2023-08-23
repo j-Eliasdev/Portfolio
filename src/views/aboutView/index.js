@@ -6,15 +6,16 @@ import EliasImg from "../../assets/img/elias.png";
 export default function AboutMe() {
   return (
     <Container>
-      {/* Div imagen de perfil */}
+      {/* Columna izquierda contiene la imagen */}
       <div className="about-col-1">
-        <img src={EliasImg} alt="elias" />
+        <img className="img-me" src={EliasImg} alt="elias" />
       </div>
 
-      {/* div descripcion sobre mi */}
+      {/* Columna derecha */}
       <div className="about-col-2">
-        <h1 className="sub-title">Sobre mi</h1>
-        <p className="descripcion">
+        {/* Descripcion sobre mi */}
+        <h1 className="title">Sobre mi</h1>
+        <p>
           {" "}
           Programador web con mas de 1 año de trayectoria desarrollando apps. A
           lo largo de este año, he obtenido un gran conocimiento en el
@@ -25,18 +26,18 @@ export default function AboutMe() {
 
         {/* Bloque de experiencia y estudios  */}
         <div className="tab-experience">
-          {/* experiencia */}
-          <div className="col-left">
-            <h3>Experiencia</h3>
+          {/* Columna izquierda experiencia */}
+          <div className="col-exp-left">
+            <h3 className="sub-title">Experiencia</h3>
             <div>
-              <div className="div-education">
+              <div className="litle-card">
                 <h3>
-                  <BsFillCalendarFill className="icons" />
+                  <BsFillCalendarFill className="icons-calendar" />
                   Mar. 2022 - Jun. 2023
                 </h3>
+                <h5>Xarketing - Agencia De Servicios Digitales.</h5>
                 <p>
-                  Desarrollador front-end en Xarketing - Agencia De Servicios
-                  Digitales. <br />{" "}
+                  Desarrollador Front-End <br />{" "}
                   <span style={{ fontWeight: "bold", color: "#fff" }}>
                     Olot, Girona
                   </span>
@@ -44,37 +45,31 @@ export default function AboutMe() {
               </div>
             </div>
           </div>
-          {/* Estudios */}
-          <div className="col-right">
-            <h3 className="tab-links">Educación</h3>
+          {/* Columna derecha Estudios */}
+          <div className="col-exp-right">
+            <h3 className="sub-title">Educación</h3>
             <div className="derecha">
-              <div className="div-education">
+              <div className="litle-card">
                 <h3>
-                  <BsFillCalendarFill className="icons" />
+                  <BsFillCalendarFill className="icons-calendar" />
                   sept. 2019 - may. 2020
                 </h3>
                 <h5> GRADO SUPERIOR INSTITUTO BOSC DE LA COMA.</h5>
                 <p>Administración de sistemas en redes (ASIX 1).</p>
                 <span style={{ fontWeight: "bold" }}>Olot, Girona</span>
-                {/* <div className="conectord">
-                  <div className="circulod"></div>
-                </div> */}
               </div>
-              <div className="div-education">
+              <div className="litle-card">
                 <h3>
-                  <BsFillCalendarFill className="icons" />
+                  <BsFillCalendarFill className="icons-calendar" />
                   sept. 2020 - may. 2021
                 </h3>
                 <h5> GRADO SUPERIOR INSTITUTO BOSC DE LA COMA.</h5>
                 <p>Desarrollador de aplicaciones web (DAW 2).</p>
                 <span style={{ fontWeight: "bold" }}>Olot, Girona</span>
-                {/* <div className="conectord">
-                  <div className="circulod"></div>
-                </div> */}
               </div>
-              <div className="div-education">
+              <div className="litle-card">
                 <h3>
-                  <BsFillCalendarFill className="icons" />
+                  <BsFillCalendarFill className="icons-calendar" />
                   sept. 2021 - may. 2022
                 </h3>
                 <h5> GRADO SUPERIOR INSTITUTO BOSC DE LA COMA.</h5>
@@ -82,9 +77,6 @@ export default function AboutMe() {
                   Desarrollador de aplicaciones multiplataforma (DAM 2).
                 </p>{" "}
                 <span style={{ fontWeight: "bold" }}>Olot, Girona</span>
-                {/* <div className="conectord">
-                  <div className="circulod"></div>
-                </div> */}
               </div>
             </div>
           </div>

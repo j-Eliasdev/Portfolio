@@ -2,53 +2,37 @@ import { styled } from "styled-components";
 
 export const Container = styled.div`
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
   align-items: center;
   min-height: 100vh;
   padding: 0 10%;
   background-color: #122543;
 
-  .Title {
-    position: absolute;
-    top: 60px;
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+  }
+  .title {
     font-size: 50px;
   }
-
-
-`;
-
-export const Card = styled.div`
-  position: relative;
-  width: 300px;
-  height: 400px;
-  border-radius: 15px;
-  color: white;
-  background-color: transparent;
-
-  img {
-    width: 300px;
-    height: 200px;
-    border-radius: 5px;
+  .card-sci {
+    position: absolute;
+    display: flex;
+    align-items: end;
+    justify-content: space-evenly;
+    bottom: 10px;
+    right: 10px;
+    width: 90px;
   }
-`;
-export const SciDiv = styled.div`
-  position: absolute;
-  display: flex;
-  align-items: end;
-  justify-content: space-evenly;
-  bottom: 10px;
-  right: 10px;
-  width: 90px;
-
-  a {
+  .card-sci a {
     position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
     background: transparent;
     border: 2px solid aqua;
     border-radius: 50%;
@@ -59,12 +43,10 @@ export const SciDiv = styled.div`
     overflow: hidden;
     transition: 0.5s;
   }
-
-  a:hover {
+  .card-sci a:hover {
     color: #282c34;
   }
-
-  a::before {
+  .card-sci a::before {
     content: "";
     position: absolute;
     top: 0;
@@ -75,8 +57,33 @@ export const SciDiv = styled.div`
     background: aqua;
     transition: 0.5s;
   }
-  a:hover::before {
+  .card-sci a:hover::before {
     width: 100%;
     color: #282c34;
+  }
+
+  img {
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+  }
+  .card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+  }
+
+  @media (max-width: 1199px) {
+  padding: 15px 10%;
+
+    .title {
+      margin: 20px 0;
+    }
+  }
+  @media (max-width: 787px) {
+    .cards{
+    justify-content: center;;
+
+    }
   }
 `;

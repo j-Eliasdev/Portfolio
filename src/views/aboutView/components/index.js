@@ -2,7 +2,6 @@ import { styled } from "styled-components";
 
 export const Container = styled.div`
   display: flex;
-  justify-content: space-around;
   align-items: center;
   min-height: 100vh;
   padding: 0% 10%;
@@ -11,18 +10,21 @@ export const Container = styled.div`
   .about-col-1 {
     flex-basis: 35%;
   }
-  .about-col-1 img {
-    width: 100%;
-  }
-
   .about-col-2 {
     flex-basis: 60%;
-    height: 500px;
   }
-  .sub-title {
+  .img-me {
+    width: 400px;
+  }
+  .title {
     color: aqua;
     font-size: 40px;
     font-weight: bold;
+  }
+  .sub-title {
+    font-size: 21px;
+    text-decoration: underline;
+    text-decoration-color: aqua;
   }
   .tab-experience {
     display: flex;
@@ -30,51 +32,61 @@ export const Container = styled.div`
     justify-content: space-between;
   }
 
-  .col-left {
+  .col-exp-left {
     flex-basis: 45%;
   }
-  .col-right {
+  .col-exp-right {
     flex-basis: 45%;
   }
 
   h3 {
     margin-bottom: 8px;
   }
-  .icons {
+  .icons-calendar {
     margin-right: 6px;
   }
-  .div-education {
-    position: relative;
-    padding: 5px;
+  .litle-card {
+    padding: 10px;
     margin-bottom: 25px;
-    border: 1px solid aqua;
     border-radius: 5px;
-    background-color: #0B1629;
+    background-color: #0b1629;
   }
-  p {
+  .litle-card p {
     color: aqua;
   }
-  .descripcion {
-    color: white;
-  }
 
-  .conectord {
-    height: 2px;
-    background-color: aqua;
-    width: 0px;
-    position: absolute;
-    top: 0%;
-    left: -17px;
-    z-index: 5;
+  /* BreakPonit */
+
+  @media (max-width: 1150px) {
+    .about-col-1 {
+      flex-basis: 55%;
+    }
+    .about-col-2 {
+      flex-basis: 45%;
+      margin-top: 50px;
+    }
+    .tab-experience {
+      display: block;
+    }
   }
-  .circulod {
+  @media (max-width: 987px) {
     display: block;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: aqua;
-    float: left;
-    position: relative;
-    bottom: 4px;
+    .tab-experience {
+      display: flex;
+    }
+    .about-col-1 {
+      display: flex;
+      justify-content: center;
+    }
+    .img-me {
+      width: 300px;
+      margin-top: 10px;
+    }
+  }
+  @media (max-width: 715px) {
+    padding-bottom: 10px;
+    .tab-experience {
+      display: block;
+    }
   }
 `;
