@@ -150,6 +150,24 @@ export const Container = styled.div`
     cursor: pointer;
     transition: 0.5s;
   }
+  .btn-form:hover {
+    color: aqua;
+  }
+
+  .btn-form::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #122543;
+    z-index: -1;
+    transition: 0.5s;
+  }
+  .btn-form:hover::before {
+    width: 100%;
+  }
 
   @media (max-width: 990px) {
     display: block;
