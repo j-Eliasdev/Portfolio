@@ -168,6 +168,11 @@ export const Container = styled.div`
   .btn-form:hover::before {
     width: 100%;
   }
+  .error{
+    color: #ff3333;
+    font-weight: bold;
+    margin-top: -10px;
+  }
   #msg{
     display: block;
     margin-top: 20px;
