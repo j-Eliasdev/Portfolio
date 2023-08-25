@@ -4,28 +4,39 @@ import AboutMe from "../aboutView";
 import SkillsView from "../skillsView";
 import ProjectView from "../projectView";
 import ContactView from "../contactView";
+import { AnimationOnScroll } from "react-animation-on-scroll";
+import "animate.css";
 
 function LandingPage() {
   return (
     <main>
       <section id="home">
-        <HomeView />
+        <AnimationOnScroll animateIn="animate__slideInRight">
+          <HomeView />
+        </AnimationOnScroll>
       </section>
-
       <section id="about">
-        <AboutMe />
+        <AnimationOnScroll animateIn="animate__fadeIn ">
+          <AboutMe />
+        </AnimationOnScroll>
       </section>
 
       <section id="skills">
-        <SkillsView />
+        <AnimationOnScroll animateIn="animate__slideInUp">
+          <SkillsView />
+        </AnimationOnScroll>
       </section>
 
       <section id="projects">
-        <ProjectView />
+        <AnimationOnScroll animateIn="animate__fadeIn">
+          <ProjectView />
+        </AnimationOnScroll>
       </section>
 
       <section id="contact">
-        <ContactView />
+        <AnimationOnScroll animateIn="animate__slideInLeft" >
+          <ContactView />
+        </AnimationOnScroll>
       </section>
     </main>
   );
