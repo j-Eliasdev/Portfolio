@@ -15,6 +15,9 @@ body {
 html{
   scroll-behavior: smooth;
 }
+#home, #contact{
+  overflow: hidden;
+}
 
 .header {
   position: fixed;

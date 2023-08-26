@@ -185,12 +185,12 @@ export const Container = styled.div`
     }
   }
 
-  .skill .creactive {
+  .skill .creative {
     width: 0%;
-    animation: 2s creactive forwards;
+    animation: 2s creative forwards;
   }
 
-  @keyframes creactive {
+  @keyframes creative {
     0% {
       width: 0%;
     }
@@ -198,12 +198,12 @@ export const Container = styled.div`
       width: 75%;
     }
   }
-  .skill .comunication {
+  .skill .communication {
     width: 0%;
-    animation: 2s comunication forwards;
+    animation: 2s communication forwards;
   }
 
-  @keyframes comunication {
+  @keyframes communication {
     0% {
       width: 0%;
     }

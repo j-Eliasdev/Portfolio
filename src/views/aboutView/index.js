@@ -8,12 +8,12 @@ export default function AboutMe() {
     <Container>
       {/* Columna izquierda contiene la imagen */}
       <div className="about-col-1">
-        <img className="img-me" src={EliasImg} alt="elias" />
+        <img className="img-me" src={EliasImg} alt="Elias" />
       </div>
 
       {/* Columna derecha */}
       <div className="about-col-2">
-        {/* Descripcion sobre mi */}
+        {/* Descripción sobre mi */}
         <h1 className="title">Sobre mi</h1>
         <p>
           {" "}

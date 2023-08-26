@@ -13,7 +13,7 @@ import PDFCV from "../../assets/img/my-cv.pdf";
 export default function ContactView() {
   const [formSend, SetFormSend] = useState(false);
 
-  // ----------Envia formulario a la api de google sheets---------------------
+  // ----------Envía formulario a la api de google sheets---------------------
   function FormularioE() {
     const form = document.forms["submit-to-google-sheet"];
     fetch(
@@ -27,20 +27,20 @@ export default function ContactView() {
   return (
     <Container>
       <div className="col-left">
-        <h1 className="sub-title">Contacta me</h1>
+        <h1 className="sub-title">Contácteme</h1>
         <p>
           <GrMail className="icons-contact" />
-          elias013dr@gmail.com
+          j.batistadev@gmail.com
         </p>
         <p>
           <BsFillTelephoneFill className="icons-contact" />
           653 14 32 17
         </p>
         <div className="contact-sci">
-          <a href="https://www.linkedin.com/in/jose-el%C3%ADas-batista-rosario-525271246/">
+          <a href="https://www.linkedin.com/in/jos%C3%A9-el%C3%ADas-batista-rosario-525271246/">
             <GrLinkedinOption />
           </a>
-          <a href="#a">
+          <a href="https://instagram.com/elias_0113?igshid=MzRlODBiNWFlZA==">
             <GrInstagram />
           </a>
           <a href="https://github.com/j-Eliasdev">
@@ -50,7 +50,7 @@ export default function ContactView() {
 
         <div className="btn-box">
           <a href={PDFCV} download>
-            Descragar CV
+            Descargar CV
           </a>
         </div>
       </div>
@@ -64,7 +64,7 @@ export default function ContactView() {
           validate={(valores) => {
             let errores = {};
 
-            // validacion nombre
+            // validación nombre
 
             if (!valores.nombre) {
               errores.nombre = "Por favor ingresa un nombre";
@@ -73,7 +73,7 @@ export default function ContactView() {
                 "El nombre solo puede contener letras y espacios";
             }
 
-            // validacion email
+            // validación email
 
             if (!valores.email) {
               errores.email = "Por favor ingresa un email";
@@ -110,7 +110,7 @@ export default function ContactView() {
                 as="textarea"
                 name="mensaje"
                 rows="6"
-                placeholder="Mensage"
+                placeholder="Mensaje"
               />
 
               <button type="submit" className="btn-form">
@@ -120,7 +120,7 @@ export default function ContactView() {
           )}
         </Formik>
 
-        {formSend && <span id="msg">Formulario enviado con exito!</span>}
+        {formSend && <span id="msg">Formulario enviado con éxito!</span>}
       </div>
     </Container>
   );
