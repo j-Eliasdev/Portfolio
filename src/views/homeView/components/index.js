@@ -5,6 +5,7 @@ export const Container = styled.div`
   align-items: center;
   height: 110vh;
   padding: 0 10%;
+  
 
   .col-left {
     flex-basis: 45%;
@@ -33,7 +34,7 @@ export const Container = styled.div`
     width: 500px;
   }
   
-  /* BreakPonit */
+  /* BreakPoint */
 
   @media (max-width: 1100px) {
     .home-content {

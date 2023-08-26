@@ -22,7 +22,7 @@ function LandingPage() {
       </section>
 
       <section id="skills">
-        <AnimationOnScroll animateIn="animate__slideInUp">
+        <AnimationOnScroll animateIn="animate__slideInLeft">
           <SkillsView />
         </AnimationOnScroll>
       </section>
@@ -34,7 +34,7 @@ function LandingPage() {
       </section>
 
       <section id="contact">
-        <AnimationOnScroll animateIn="animate__slideInLeft" >
+        <AnimationOnScroll animateIn="animate__slideInRight" >
           <ContactView />
         </AnimationOnScroll>
       </section>

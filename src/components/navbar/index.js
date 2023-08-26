@@ -26,7 +26,7 @@ export default function NavarComponent() {
           Habilidades
         </a>
         <a href="#projects" style={{ transitionDelay: "calc(.60s)" }}>
-          Projectos
+          Proyectos
         </a>
         <a href="#contact" style={{ transitionDelay: "calc(.75s)" }}>
           Contacto

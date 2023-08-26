@@ -60,7 +60,7 @@ export default function SkillsView() {
         <div className="skill">
           <span>Creatividad</span>
           <div className="barra-skill">
-            <div className="progreso creactive">
+            <div className="progreso creative">
               <span>75%</span>
             </div>
           </div>
@@ -68,7 +68,7 @@ export default function SkillsView() {
         <div className="skill">
           <span>Comunicación efectiva</span>
           <div className="barra-skill">
-            <div className="progreso comunication">
+            <div className="progreso communication">
               <span>85%</span>
             </div>
           </div>
@@ -82,7 +82,7 @@ export default function SkillsView() {
           </div>
         </div>
         <div className="skill">
-          <span>Resolición de problemas</span>
+          <span>Resolución de problemas</span>
           <div className="barra-skill">
             <div className="progreso resolution">
               <span>80%</span>
