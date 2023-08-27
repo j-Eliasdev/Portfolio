@@ -15,16 +15,16 @@ export const Container = styled.div`
     justify-content: space-evenly;
   }
   .card {
-    width: 350px;
-    height: 350px;
+    width: 300px;
+    height: 400px;
     border-radius: 10px;
     position: relative;
     overflow: hidden;
   }
   .card img {
-    display: block;
-    width: 100%;
     height: 100%;
+    width: 100%;
+    display: block;
     border-radius: 10px;
     transition: transform 0.5s;
   }
