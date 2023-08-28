@@ -30,7 +30,7 @@ export default function AboutMe() {
           <div className="col-exp-left">
             <h3 className="sub-title">Experiencia</h3>
             <div>
-              <div className="litle-card">
+              <div className="little-card">
                 <h3>
                   <BsFillCalendarFill className="icons-calendar" />
                   Mar. 2022 - Jun. 2023
@@ -49,7 +49,7 @@ export default function AboutMe() {
           <div className="col-exp-right">
             <h3 className="sub-title">Educación</h3>
             <div className="derecha">
-              <div className="litle-card">
+              <div className="little-card">
                 <h3>
                   <BsFillCalendarFill className="icons-calendar" />
                   sept. 2019 - may. 2020
@@ -58,7 +58,7 @@ export default function AboutMe() {
                 <p>Administración de sistemas en redes (ASIX 1).</p>
                 <span style={{ fontWeight: "bold" }}>Olot, Girona</span>
               </div>
-              <div className="litle-card">
+              <div className="little-card">
                 <h3>
                   <BsFillCalendarFill className="icons-calendar" />
                   sept. 2020 - may. 2021
@@ -67,7 +67,7 @@ export default function AboutMe() {
                 <p>Desarrollador de aplicaciones web (DAW 2).</p>
                 <span style={{ fontWeight: "bold" }}>Olot, Girona</span>
               </div>
-              <div className="litle-card">
+              <div className="little-card">
                 <h3>
                   <BsFillCalendarFill className="icons-calendar" />
                   sept. 2021 - may. 2022
