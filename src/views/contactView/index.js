@@ -27,14 +27,14 @@ export default function ContactView() {
   return (
     <Container>
       <div className="col-left">
-        <h1 className="sub-title">Contácteme</h1>
+        <h1 className="sub-title">Contáctame</h1>
         <p>
           <GrMail className="icons-contact" />
           j.batistadev@gmail.com
         </p>
         <p>
           <BsFillTelephoneFill className="icons-contact" />
-          653 14 32 17
+          +34 653 14 32 17
         </p>
         <div className="contact-sci">
           <a href="https://www.linkedin.com/in/jos%C3%A9-el%C3%ADas-batista-rosario-525271246/">

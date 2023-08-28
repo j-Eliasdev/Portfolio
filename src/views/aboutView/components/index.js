@@ -45,17 +45,17 @@ export const Container = styled.div`
   .icons-calendar {
     margin-right: 6px;
   }
-  .litle-card {
+  .little-card {
     padding: 10px;
     margin-bottom: 25px;
     border-radius: 5px;
     background-color: #0b1629;
   }
-  .litle-card p {
+  .little-card p {
     color: aqua;
   }
 
-  /* BreakPonit */
+  /* BreakPoint */
 
   @media (max-width: 1150px) {
     .about-col-1 {

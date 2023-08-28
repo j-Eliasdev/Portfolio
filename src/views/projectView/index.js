@@ -21,7 +21,7 @@ export default function ProjectView() {
               entretenimiento y descubrimiento en una sola plataforma. (Clon de
               twitter, aun en desarrollo)
             </p>
-            <div className="card-sci">
+            {/* <div className="card-sci">
               <a href="https://www.linkedin.com/in/jose-el%C3%ADas-batista-rosario-525271246/">
                 <FaShareSquare />
               </a>
@@ -29,7 +29,7 @@ export default function ProjectView() {
               <a href="https://github.com/j-Eliasdev">
                 <GrGithub />
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -40,17 +40,17 @@ export default function ProjectView() {
             <h2>Gestor de reservas</h2>
             <p>
               Aplicación de gestión de reservas que cambiará la forma en que las
-              empresas gestionan sus citas y reservas.
+              empresas gestionan sus citas y reservas.(En desarrollo)
             </p>
 
-            <div className="card-sci">
+            {/* <div className="card-sci">
               <a href="https://www.linkedin.com/in/jose-el%C3%ADas-batista-rosario-525271246/">
                 <FaShareSquare />
               </a>
               <a href="https://github.com/j-Eliasdev">
                 <GrGithub />
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
 
@@ -64,10 +64,10 @@ export default function ProjectView() {
               tablero de 3x3. (Desarrollado en las practicas del instituto)
             </p>
             <div className="card-sci">
-              <a href="https://www.linkedin.com/in/jose-el%C3%ADas-batista-rosario-525271246/">
+              <a href="https://game-3-en-raya.up.railway.app/">
                 <FaShareSquare />
               </a>
-              <a href="https://github.com/j-Eliasdev">
+              <a href="https://github.com/j-Eliasdev/game-3-en-raya">
                 <GrGithub />
               </a>
             </div>
