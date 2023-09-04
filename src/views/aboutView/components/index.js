@@ -5,10 +5,16 @@ export const Container = styled.div`
   align-items: center;
   min-height: 100vh;
   padding: 0% 10%;
+  justify-content: space-between;
   background-color: #122543;
 
   .about-col-1 {
     flex-basis: 35%;
+  }
+  .about-col-1 img{
+    background-color: rgba(0,0,0, .5);
+    padding: 0px 7px;
+    border-radius: 10px;
   }
   .about-col-2 {
     flex-basis: 60%;
