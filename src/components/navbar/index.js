@@ -8,9 +8,9 @@ export default function NavarComponent() {
   const handleClick = () => {
     setClicked(!clicked);
   };
-  const handleClose = () =>{
-    setClicked(false)
-  }
+  const handleClose = () => {
+    setClicked(false);
+  };
   return (
     <Header>
       <Logo to="/">
@@ -104,6 +104,11 @@ const Header = styled.header`
   }
   @media (max-width: 990px) {
     padding: 1.3rem 5%;
+  }
+  @media (max-width: 600px) {
+    &::before {
+      background-color: #13215E;
+    }
   }
 `;
 
@@ -201,6 +206,9 @@ const BgDiv = styled.div`
       bottom: -17.7rem;
       left: 0;
       width: 100%;
+    }
+    @media (max-width: 600px) {
+      background-color: #13215E;
     }
   }
 `;

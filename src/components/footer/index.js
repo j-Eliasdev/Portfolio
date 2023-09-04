@@ -5,6 +5,7 @@ export default function FooterComponent() {
   return (
     <Footer>
       <div className="cr-con">
+        <p>Si puedes pensarlo, puedes programarlo ✨</p>
         Copyright &copy; 2023 | Made by JBatistaDev
         <a href="#home">
           {" "}
@@ -31,4 +32,16 @@ const Footer = styled.footer`
     right: 1.5rem;
     transition: 0.5s ease;
   }
+
+  p{
+    position: absolute;
+    left: 1.5rem;
+    font-weight: bold;
+  }
+  @media (max-width: 960px) {
+    p{
+      position:sticky;
+    }
+  }
+
 `;

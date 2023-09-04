@@ -119,7 +119,6 @@ export const Container = styled.div`
   @media (max-width: 410px) {
     .card {
     width: 300px;
-    height: 300px;
   }
   }
 `;

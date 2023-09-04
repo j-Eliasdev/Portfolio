@@ -8,7 +8,7 @@ import {
   GrMail,
 } from "react-icons/gr";
 import { BsFillTelephoneFill } from "react-icons/bs";
-import PDFCV from "../../assets/img/my-cv.pdf";
+import PDFCV from "../../assets/img/EliasCV.pdf";
 
 export default function ContactView() {
   const [formSend, SetFormSend] = useState(false);
