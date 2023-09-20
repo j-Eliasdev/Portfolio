@@ -105,7 +105,12 @@ const Header = styled.header`
   @media (max-width: 990px) {
     padding: 1.3rem 5%;
   }
- 
+  @media (max-width: 770px) {
+    &::before {
+      background-color: #0b1629;
+      border-bottom: 1px solid white;
+    }
+  }
 `;
 
 const Logo = styled(Link)`
@@ -188,20 +193,22 @@ const NavComponent = styled.nav`
 const BgDiv = styled.div`
   @media (max-width: 770px) {
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #0b1629;
     backdrop-filter: blur(50px);
-    box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.1);
     bottom: 10000px;
     left: 0;
     height: 17.7rem;
     z-index: -1;
     transition: 0.3s ease;
 
+
     &.active {
       bottom: -17.7rem;
       left: 0;
       width: 100%;
     }
-   
+    @media (max-width: 600px) {
+      background-color: #0b1629;
+    }
   }
 `;
