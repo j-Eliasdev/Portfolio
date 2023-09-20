@@ -84,6 +84,7 @@ export const Container = styled.div`
     color: #122543;
     text-decoration: none;
     z-index: 1;
+    top: 10px;
     overflow: hidden;
     transition: 0.5s;
   }

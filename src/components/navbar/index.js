@@ -105,11 +105,7 @@ const Header = styled.header`
   @media (max-width: 990px) {
     padding: 1.3rem 5%;
   }
-  @media (max-width: 600px) {
-    &::before {
-      background-color: #13215E;
-    }
-  }
+ 
 `;
 
 const Logo = styled(Link)`
@@ -194,7 +190,6 @@ const BgDiv = styled.div`
     position: absolute;
     background-color: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(50px);
-    border-bottom-right-radius: 50px;
     box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.1);
     bottom: 10000px;
     left: 0;
@@ -207,8 +202,6 @@ const BgDiv = styled.div`
       left: 0;
       width: 100%;
     }
-    @media (max-width: 600px) {
-      background-color: #13215E;
-    }
+   
   }
 `;

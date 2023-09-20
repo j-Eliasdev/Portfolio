@@ -40,17 +40,17 @@ export default function ProjectView() {
             <h2>Gestor de reservas</h2>
             <p>
               Aplicación de gestión de reservas que cambiará la forma en que las
-              empresas gestionan sus citas y reservas.(En desarrollo)
+              empresas gestionan sus citas y reservas.
             </p>
 
-            {/* <div className="card-sci">
-              <a href="https://www.linkedin.com/in/jose-el%C3%ADas-batista-rosario-525271246/">
+            <div className="card-sci">
+              <a href="https://gestor-reservas-seven.vercel.app/">
                 <FaShareSquare />
               </a>
-              <a href="https://github.com/j-Eliasdev">
+              <a href="https://github.com/j-Eliasdev/gestor-reservas">
                 <GrGithub />
               </a>
-            </div> */}
+            </div>
           </div>
         </div>
 
