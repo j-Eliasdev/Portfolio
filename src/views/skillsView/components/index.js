@@ -8,246 +8,145 @@ export const Container = styled.div`
   min-height: 100vh;
   padding: 0% 10%;
 
-  .sub-title {
-    text-align: center;
-    font-weight: bold;
-    margin-bottom: 50px;
-    text-decoration: underline;
-  }
-  .col-symbols,
-  .col-profesional {
-    flex-basis: 45%;
-    background-color: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(50px);
-    padding: 10px;
-    margin-bottom: 10px;
-    border-radius: 15px;
-  }
-
-  .skill > span {
-    display: block;
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  .skill .barra-skill {
-    height: 8px;
-    width: 100%;
-    border-radius: 15px;
-    background-color: #122543;
-    position: relative;
-    margin-bottom: 30px;
-  }
-  .skill .progreso {
-    background-color: aqua;
-    border-radius: 15px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 8px;
-  }
-  .skill .barra-skill span {
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    color: #131517;
-    background-color: aqua;
-    border-radius: 50px;
-    line-height: 40px;
-    text-align: center;
-    top: -17px;
-    right: -15px;
-    font-size: 14px;
-  }
-
-  /* -----------------------------------BreakPonit---------------------------------------- */
-
-  @media (max-width: 1400px) {
-    justify-content: space-between;
-    .col-symbols,
-    .col-profesional {
-      flex-basis: 450px;
-    }
-  }
-  @media (max-width: 1130px) {
+  @media (max-width: 995px) {
     display: grid;
+    align-items: center;
     justify-content: center;
-    padding: 20px 10%;
-    .col-symbols,
-    .col-profesional {
-      width: 500px;
-      margin-top: 50px;
-    }
+    padding-bottom: 10%;
+  }
+`;
+
+export const TecnologiasSvg = styled.div`
+  width: 35%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+`;
+
+export const Title = styled.h1`
+  font-size: 50px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 10%;
+  z-index: 10;
+  @media (max-width: 995px) {
+    position: static;
+    margin: 10% 0;
+  }
+  @media (max-width: 995px) {
+    margin: 20% 0;
   }
   @media (max-width: 555px) {
-    .col-symbols,
-    .col-profesional {
-      width: 350px;
-    }
-    .skill > span {
-      font-size: 20px;
-    }
-    .skill .barra-skill span {
-      height: 30px;
-      width: 30px;
-      line-height: 30px;
-      top: -10px;
-      right: -12px;
-      font-size: 12px;
-    }
+    margin: 30% 0;
   }
-  @media (max-width: 390px) {
-    .col-symbols,
-    .col-profesional {
-      width: 300px;
-    }
+`;
+
+export const CuboContainer = styled.div`
+  width: 60%;
+  perspective: 1000px;
+  perspective-origin: 50% 50%;
+  @media (max-width: 995px) {
+      width: 100%;
   }
 
-  // -----------------------------Animation------------------------------------------
-
-  .react-symbol {
-    animation: rotate 10s infinite linear;
+  .cubo,
+  .cubo .cara {
+    height: 260px;
+    width: 260px;
   }
 
-  @keyframes rotate {
+  .cubo {
+    transform-style: preserve-3d;
+    transform: rotateX(0deg) rotateY(-30deg);
+    margin: 200px auto;
+  }
+
+  .cubo .cara {
+    position: absolute;
+    border: 5px solid #000;
+    opacity: 0.95;
+    background-color: aliceblue;
+  }
+
+  /*Cara frontal*/
+
+  .cubo .cara:nth-child(1) {
+    transform: translateZ(130px);
+  }
+  /*Cara posterior*/
+
+  .cubo .cara:nth-child(2) {
+    transform: translateZ(-130px) rotateY(180deg);
+  }
+  /*Cara izquierda*/
+
+  .cubo .cara:nth-child(3) {
+    transform: translateX(-130px) rotateY(-90deg);
+  }
+  /*Cara derecha*/
+
+  .cubo .cara:nth-child(4) {
+    transform: translateX(130px) rotateY(90deg);
+  }
+  /*Cara superior*/
+
+  .cubo .cara:nth-child(5) {
+    transform: translateY(-130px) rotateX(90deg);
+  }
+  /*Cara inferior*/
+
+  .cubo .cara:nth-child(6) {
+    transform: translateY(130px) rotateX(-90deg);
+  }
+  @keyframes giro360 {
     0% {
-      transform: rotate(0deg);
+      transform: rotateX(0deg) rotateY(0deg);
+    }
+    100% {
+      transform: rotateX(360deg) rotateY(360deg);
+    }
+  }
+  @keyframes giro {
+    0% {
+      transform: rotateX(-45deg) rotateY(0deg);
     }
     50% {
-      transform: rotate(180deg);
+      transform: rotateX(45deg) rotateY(360deg);
     }
     100% {
-      transform: rotate(360deg);
+      transform: rotateX(-45deg) rotateY(720deg);
     }
   }
+  .cubo {
+    animation: giro 20s infinite linear;
+  }
+  .Con-dado {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    place-items: center;
+    @media (max-width: 995px) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
 
-  .skill .javaScript {
-    width: 0%;
-    animation: 2s javaScript forwards;
   }
-  @keyframes javaScript {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 70%;
-    }
   }
-  .skill .html {
-    width: 0%;
-    animation: 2s html forwards;
-  }
+  .Square {
+    width: 65px;
+    height: 65px;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 10%;
+    padding: 8px;
+    display:grid;
+    place-items: center;
+    transition: 0.3s;
 
-  @keyframes html {
-    0% {
-      width: 0%;
+   
+  } 
+  .Square:hover {
+      transform: scale(1.3);
+      transition: 0.6s;
     }
-    100% {
-      width: 80%;
-    }
-  }
-  .skill .css {
-    width: 0%;
-    animation: 2s css forwards;
-  }
-
-  @keyframes css {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 90%;
-    }
-  }
-  .skill .react {
-    width: 0%;
-    animation: 2s react forwards;
-  }
-
-  @keyframes react {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 80%;
-    }
-  }
-  .skill .git {
-    width: 0%;
-    animation: 2s git forwards;
-  }
-
-  @keyframes git {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 75%;
-    }
-  }
-
-  .skill .creative {
-    width: 0%;
-    animation: 2s creative forwards;
-  }
-
-  @keyframes creative {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 75%;
-    }
-  }
-  .skill .communication {
-    width: 0%;
-    animation: 2s communication forwards;
-  }
-
-  @keyframes communication {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 85%;
-    }
-  }
-  .skill .teamwork {
-    width: 0%;
-    animation: 2s teamwork forwards;
-  }
-
-  @keyframes teamwork {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 90%;
-    }
-  }
-  .skill .resolution {
-    width: 0%;
-    animation: 2s resolution forwards;
-  }
-
-  @keyframes resolution {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 80%;
-    }
-  }
-  .skill .learn {
-    width: 0%;
-    animation: 2s learn forwards;
-  }
-
-  @keyframes learn {
-    0% {
-      width: 0%;
-    }
-    100% {
-      width: 90%;
-    }
-  }
 `;

@@ -23,6 +23,15 @@ export default function AboutMe() {
           conocimientos y capacidad creativa al siguiente nivel, aportando mis
           conocimientos en React, JavaScript, Bootstrap, entre otros.
         </p>
+        <br />
+        <p>
+          Durante mi tiempo en la empresa, tuve la oportunidad de desempeñar
+          diversas funciones. Me encargué del desarrollo web en varios
+          proyectos, incluyendo sistemas de gestores de reservas, inscripciones
+          y documental.Además, mantuve una interacción activa con los clientes
+          para resolver sus problemas y trabajé en equipo bajo mi liderazgo para
+          aumentar la productividad en los proyectos.
+        </p>
 
         {/* Bloque de experiencia y estudios  */}
         <div className="tab-experience">

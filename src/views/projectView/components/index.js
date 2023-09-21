@@ -28,7 +28,7 @@ export const Container = styled.div`
     border-radius: 10px;
     transition: transform 0.5s;
   }
-  .layer p{
+  .layer p {
     font-size: 18px;
     font-weight: 600;
   }
@@ -119,7 +119,28 @@ export const Container = styled.div`
   }
   @media (max-width: 410px) {
     .card {
-    width: 300px;
+      width: 300px;
+    }
   }
+`;
+
+export const Card = styled.div`
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+  border: 2px solid rgba(0, 153, 255, 0.435);
+  width: 600px;
+  aspect-ratio: 18/9;
+  border-radius: 6px;
+  position: relative;
+
+  .bg {
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    filter: blur(20px);
+    width: 100%;
+    height: 100%;
+  }
+  h1 {
+    color: #fff;
+    padding: 20px;
   }
 `;

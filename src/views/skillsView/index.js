@@ -1,103 +1,56 @@
 import React from "react";
-import { Container } from "./components";
-import { Reactjs, Js, Github } from "@react-symbols/icons";
-import { AiFillHtml5 } from "react-icons/ai";
-import { DiCss3 } from "react-icons/di";
+import { Container, TecnologiasSvg, CuboContainer, Title } from "./components";
+import {
+  GitSvg,
+  HtmlSvg,
+  JavaScriptSvg,
+  CssSvg,
+  ReactSvg,
+  BootstrapSvg,
+  ChakraUISvg,
+  NodejsSvg,
+  SassSvg,
+  StyledComponentsSvg,
+  TailWindSvg,
+} from "../../components/icons";
 
 export default function SkillsView() {
   return (
-    <Container>
-      {/* ---------------Columna izquierda---------------- */}
-
-      <div className="col-symbols">
-        <h2 className="sub-title">Habilidades en código</h2>
-        <div className="skill">
-          <AiFillHtml5 style={{ color: "orangered", fontSize: "30px" }} />
-          <div className="barra-skill">
-            <div className="progreso html">
-              <span>80%</span>
-            </div>
+    <div>
+      <Title>Habilidades</Title>
+      <Container>
+        <TecnologiasSvg>
+          <GitSvg />
+          <HtmlSvg />
+          <JavaScriptSvg />
+          <CssSvg />
+          <ReactSvg />
+          <BootstrapSvg />
+          <ChakraUISvg />
+          <NodejsSvg />
+          <SassSvg />
+          <StyledComponentsSvg />
+          <TailWindSvg />
+        </TecnologiasSvg>
+        <CuboContainer>
+          <div className="cubo">
+            <div className="cara" />
+            <div className="cara" />
+            <div className="cara" />
+            <div className="cara" />
+            <div className="cara" />
+            <div className="cara" />
           </div>
-        </div>
-        <div className="skill">
-          <DiCss3 style={{ color: "skyblue", fontSize: "30px" }} />
-          <div className="barra-skill">
-            <div className="progreso css">
-              <span>90%</span>
-            </div>
+          <div className="Con-dado">
+            <div className="Square">1</div>
+            <div className="Square">2</div>
+            <div className="Square">3</div>
+            <div className="Square">4</div>
+            <div className="Square">5</div>
+            <div className="Square">6</div>
           </div>
-        </div>
-        <div className="skill">
-          <Js width={40} height={40} />
-          <div className="barra-skill ">
-            <div className="progreso javaScript">
-              <span>70%</span>
-            </div>
-          </div>
-        </div>
-        <div className="skill">
-          <Reactjs className="react-symbol" width={40} height={40} />
-          <div className="barra-skill">
-            <div className="progreso react">
-              <span>80%</span>
-            </div>
-          </div>
-        </div>
-        <div className="skill">
-          <Github width={40} height={40} />
-          <div className="barra-skill">
-            <div className="progreso git">
-              <span>75%</span>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* ---------------------------------------Columna Derecha------------------------------------------------- */}
-
-      <div className="col-profesional">
-        <h2 className="sub-title">Habilidades profesionales</h2>
-        <div className="skill">
-          <span>Creatividad</span>
-          <div className="barra-skill">
-            <div className="progreso creative">
-              <span>75%</span>
-            </div>
-          </div>
-        </div>
-        <div className="skill">
-          <span>Comunicación efectiva</span>
-          <div className="barra-skill">
-            <div className="progreso communication">
-              <span>85%</span>
-            </div>
-          </div>
-        </div>
-        <div className="skill">
-          <span>Trabajo en equipo</span>
-          <div className="barra-skill">
-            <div className="progreso teamwork">
-              <span>90%</span>
-            </div>
-          </div>
-        </div>
-        <div className="skill">
-          <span>Resolución de problemas</span>
-          <div className="barra-skill">
-            <div className="progreso resolution">
-              <span>80%</span>
-            </div>
-          </div>
-        </div>
-        <div className="skill">
-          <span>Aprendizaje fluido</span>
-          <div className="barra-skill">
-            <div className="progreso learn">
-              <span>90%</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </Container>
+        </CuboContainer>
+      </Container>
+    </div>
   );
 }

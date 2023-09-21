@@ -1,7 +1,7 @@
 import React from "react";
 import { GrGithub } from "react-icons/gr";
 import { FaShareSquare } from "react-icons/fa";
-import { Container } from "./components";
+import { Container, Card } from "./components";
 import ProTwitter from "../../assets/img/red-social.jpg";
 import ProGestor from "../../assets/img/gestor.jpg";
 import ProGame from "../../assets/img/game.png";
@@ -74,6 +74,10 @@ export default function ProjectView() {
           </div>
         </div>
       </div>
+      <Card>
+        <h1>Este es el proyecto</h1>
+        <div className="bg"></div>
+      </Card>
     </Container>
   );
 }

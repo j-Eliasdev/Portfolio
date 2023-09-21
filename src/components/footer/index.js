@@ -19,11 +19,11 @@ export default function FooterComponent() {
 const Footer = styled.footer`
   .cr-con {
     position: relative;
-
     background-color: #122543;
     color: white;
     padding: 1rem 4rem;
     text-align: center;
+    border-top: 1px solid white;
   }
   a {
     position: absolute;
