@@ -12,7 +12,8 @@ export const Container = styled.div`
   }
   .contact-sci {
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
+    gap: 12px;
     bottom: 40px;
     width: 170px;
   }
@@ -168,17 +169,17 @@ export const Container = styled.div`
   .btn-form:hover::before {
     width: 100%;
   }
-  .error{
+  .error {
     color: #ff3333;
     font-weight: bold;
     margin-top: -10px;
   }
-  #msg{
+  #msg {
     display: block;
     margin-top: 20px;
     font-size: 16px;
     font-weight: bold;
-    color: #14A44D;
+    color: #14a44d;
   }
 
   @media (max-width: 990px) {
@@ -188,4 +189,19 @@ export const Container = styled.div`
       height: fit-content;
     }
   }
+  @media (max-width: 990px) {
+    .sub-title{
+      margin-top: 10%;
+    }
+  }
+  @media (max-width: 800px) {
+    .sub-title{
+      margin-top: 20%;
+    }
+    }
+    @media (max-width: 530px) {
+    .sub-title{
+      margin-top: 30%;
+    }
+    }
 `;

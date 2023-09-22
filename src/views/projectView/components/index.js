@@ -3,123 +3,110 @@ import { styled } from "styled-components";
 export const Container = styled.div`
   position: relative;
   display: grid;
-  align-items: center;
   min-height: 100vh;
   padding: 0 10%;
   background-color: #122543;
+  .title {
+    font-size: 50px;
+    padding-top: 10%;
 
+    @media (max-width: 1050px) {
+      padding-top: 20%;
+    }
+    @media (max-width: 770px) {
+      margin-bottom: 10%;
+    }
+    @media (max-width: 630px) {
+      padding-top: 30%;
+    }
+  }
+  .atropos {
+    width: 300px;
+    height: 400px;
+  }
   .cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 10px;
-    justify-content: space-evenly;
-  }
-  .card {
-    width: 300px;
-    height: 400px;
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
-  }
-  .card img {
-    height: 100%;
-    width: 100%;
-    display: block;
-    border-radius: 10px;
-    transition: transform 0.5s;
-  }
-  .layer p{
-    font-size: 18px;
-    font-weight: 600;
-  }
-  .title {
-    font-size: 50px;
-  }
-  .layer {
-    width: 100%;
-    height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), #00ffff);
-    border-radius: 10px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 40px;
-    text-align: center;
-    transition: height 0.5s;
-  }
-  .layer h2 {
-    font-weight: 600;
-    margin-bottom: 20px;
-  }
-
-  .card:hover img {
-    transform: scale(1.1);
-  }
-  .card:hover .layer {
-    height: 100%;
+    gap: 20px;
   }
 
   .card-sci {
-    display: flex;
-    align-items: end;
-    justify-content: space-evenly;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
     width: 90px;
+    display: flex;
+    justify-content: space-between;
   }
   .card-sci a {
-    position: relative;
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     background: transparent;
-    border: 2px solid #122543;
+    border: 2px solid #00ffff;
     border-radius: 50%;
-    font-size: 20px;
-    color: #122543;
+    font-size: 25px;
+    color: #00ffff;
     text-decoration: none;
     z-index: 1;
-    top: 10px;
     overflow: hidden;
     transition: 0.5s;
   }
   .card-sci a:hover {
-    color: #00ffff;
-  }
-  .card-sci a::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    z-index: -1;
-    background: #122543;
-    transition: 0.5s;
-  }
-  .card-sci a:hover::before {
-    width: 100%;
     color: #282c34;
+    border: 2px solid #282c34;
+    background: #00ffff;
   }
 
   /* ---------------BreakPoint---------------- */
   @media (max-width: 1199px) {
-    padding: 15px 10%;
+    padding-top: 10% 0;
   }
-  @media (max-width: 877px) {
-    .cards {
-      gap: 70px;
-      margin: 60px 0;
-    }
+  @media (max-width: 775px) {
+    padding-bottom: 20%;
   }
-  @media (max-width: 410px) {
-    .card {
+`;
+
+export const Card = styled.div`
+  position: relative;
+  width: 300px;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 2px solid rgba(0, 153, 255, 0.435);
+  border-radius: 10px;
+  overflow: hidden;
+  .card-img {
+    position: absolute;
+    z-index: -1;
+  }
+  .card-img img {
     width: 300px;
   }
+  .card-info {
+    height: 100%;
+    padding: 10%;
+  }
+  .icon-svg{
+    position: relative;
+    display: grid;
+    width: 100px;
+    margin-top: 25px;
+    justify-content:space-evenly;
+    gap: 5px;
+    grid-template-columns: repeat(3, 1fr)
+  }
+  h3{
+    grid-column: 1/4;
+  }
+
+  h1 {
+    color: aqua;
+    font-size: 27px;
+    margin: 10px 0;
+  }
+  p{
+    font-size: 20px;
   }
 `;

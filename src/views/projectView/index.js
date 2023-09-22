@@ -1,10 +1,16 @@
 import React from "react";
+import {
+  ReactTec,
+  JavaScriptTec,
+  TailWindTec,
+  CssTec,
+} from "../../components/icons";
 import { GrGithub } from "react-icons/gr";
 import { FaShareSquare } from "react-icons/fa";
-import { Container } from "./components";
-import ProTwitter from "../../assets/img/red-social.jpg";
+import { Container, Card } from "./components";
 import ProGestor from "../../assets/img/gestor.jpg";
 import ProGame from "../../assets/img/game.png";
+import Atropos from "atropos/react";
 
 export default function ProjectView() {
   return (
@@ -12,67 +18,71 @@ export default function ProjectView() {
       <h1 className="title">Proyectos</h1>
       {/* ---------------------------------------Proyecto 1-------------------------------------- */}
       <div className="cards">
-        <div className="card">
-          <img src={ProTwitter} alt="Imagen del proyecto clon twitter" />
-          <div className="layer">
-            <h2>Red social</h2>
-            <p>
-              Es una red social todo en uno que combina comunicación,
-              entretenimiento y descubrimiento en una sola plataforma. (Clon de
-              twitter, aun en desarrollo)
-            </p>
-            {/* <div className="card-sci">
-              <a href="https://www.linkedin.com/in/jose-el%C3%ADas-batista-rosario-525271246/">
-                <FaShareSquare />
-              </a>
-
-              <a href="https://github.com/j-Eliasdev">
-                <GrGithub />
-              </a>
-            </div> */}
-          </div>
-        </div>
-
-        {/* ---------------------------------------Proyecto 2-------------------------------------- */}
-        <div className="card">
-          <img src={ProGestor} alt="Imagen del proyecto Gestor" />
-          <div className="layer">
-            <h2>Gestor de reservas</h2>
-            <p>
-              Aplicación de gestión de reservas que cambiará la forma en que las
-              empresas gestionan sus citas y reservas.
-            </p>
-
-            <div className="card-sci">
-              <a href="https://gestor-reservas-seven.vercel.app/">
-                <FaShareSquare />
-              </a>
-              <a href="https://github.com/j-Eliasdev/gestor-reservas">
-                <GrGithub />
-              </a>
+        <Atropos shadow={false} highlight={0} className="atropos">
+          <Card>
+            <div className="card-img">
+              <img
+                src={ProGestor}
+                alt="Imagen del proyecto juego"
+                data-atropos-offset="5"
+              />
             </div>
-          </div>
-        </div>
-
-        {/* ---------------------------------------Proyecto 3-------------------------------------- */}
-        <div className="card">
-          <img src={ProGame} alt="Imagen del proyecto juego" />
-          <div className="layer">
-            <h2>Juego 3 en rayas</h2>
-            <p>
-              Dos jugadores compiten por hacer una línea de tres fichas en un
-              tablero de 3x3. (Desarrollado en las practicas del instituto)
-            </p>
-            <div className="card-sci">
-              <a href="https://game-3-en-raya.up.railway.app/">
-                <FaShareSquare />
-              </a>
-              <a href="https://github.com/j-Eliasdev/game-3-en-raya">
-                <GrGithub />
-              </a>
+            <div className="card-info">
+              <h1>Gestor de reservas</h1>
+              <p>
+                Aplicación de gestión de reservas que cambiará la forma en que
+                las empresas gestionan sus citas y reservas.
+              </p>
+              <div className="icon-svg">
+                <h3>Tecnologías</h3>
+                <ReactTec />
+                <TailWindTec />
+                <JavaScriptTec />
+              </div>
+              <div className="card-sci">
+                <a href="https://gestor-reservas-seven.vercel.app/">
+                  <FaShareSquare />
+                </a>
+                <a href="https://github.com/j-Eliasdev/gestor-reservas">
+                  <GrGithub />
+                </a>
+              </div>
             </div>
-          </div>
-        </div>
+          </Card>
+        </Atropos>
+
+        <Atropos shadow={false} highlight={0} className="atropos">
+          <Card>
+            <div className="card-img">
+              <img
+                src={ProGame}
+                alt="Imagen del proyecto juego"
+                data-atropos-offset="5"
+              />
+            </div>
+            <div className="card-info">
+              <h1>Juego 3 en rayas</h1>
+              <p>
+                Dos jugadores compiten por hacer una línea de tres fichas en un
+                tablero de 3x3. (Desarrollado en las practicas del instituto)
+              </p>
+              <div className="icon-svg">
+                <h3>Tecnologias</h3>
+                <ReactTec />
+                <CssTec />
+                <JavaScriptTec />
+              </div>
+              <div className="card-sci">
+                <a href="https://game-3-en-raya.up.railway.app/">
+                  <FaShareSquare />
+                </a>
+                <a href="https://github.com/j-Eliasdev/game-3-en-raya">
+                  <GrGithub />
+                </a>
+              </div>
+            </div>
+          </Card>
+        </Atropos>
       </div>
     </Container>
   );

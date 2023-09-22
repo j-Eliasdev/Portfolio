@@ -1,12 +1,7 @@
 import React, { useState } from "react";
 import { Container } from "./components";
 import { Formik, Form, Field } from "formik";
-import {
-  GrLinkedinOption,
-  GrInstagram,
-  GrGithub,
-  GrMail,
-} from "react-icons/gr";
+import { GrLinkedinOption, GrGithub, GrMail } from "react-icons/gr";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import PDFCV from "../../assets/img/EliasCV.pdf";
 
@@ -40,9 +35,7 @@ export default function ContactView() {
           <a href="https://www.linkedin.com/in/jos%C3%A9-el%C3%ADas-batista-rosario-525271246/">
             <GrLinkedinOption />
           </a>
-          <a href="https://instagram.com/elias_0113?igshid=MzRlODBiNWFlZA==">
-            <GrInstagram />
-          </a>
+
           <a href="https://github.com/j-Eliasdev">
             <GrGithub />
           </a>

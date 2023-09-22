@@ -4,23 +4,28 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   min-height: 100vh;
-  padding: 0% 10%;
+  padding: 10% 10%;
   justify-content: space-between;
   background-color: #122543;
 
   .about-col-1 {
     flex-basis: 35%;
   }
-  .about-col-1 img{
-    background-color: rgba(0,0,0, .5);
+  .about-col-1 img {
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 0px 7px;
     border-radius: 10px;
+    overflow: hidden;
   }
   .about-col-2 {
     flex-basis: 60%;
   }
   .img-me {
     width: 400px;
+  }
+  .atropos {
+    width: 400px;
+    height: 524px;
   }
   .title {
     color: aqua;
@@ -63,7 +68,7 @@ export const Container = styled.div`
 
   /* BreakPoint */
 
-  @media (max-width: 1150px) {
+  @media (max-width: 1290px) {
     .about-col-1 {
       flex-basis: 55%;
     }
@@ -88,11 +93,23 @@ export const Container = styled.div`
       width: 300px;
       margin-top: 10px;
     }
+    .atropos {
+      width: 300px;
+    height: 398px;
+
+    }
+  }
+
+  @media (max-width: 830px) {
+    padding: 20% 10%;
   }
   @media (max-width: 715px) {
     padding-bottom: 10px;
     .tab-experience {
       display: block;
     }
+  }
+  @media (max-width: 490px) {
+    padding: 30% 10%;
   }
 `;

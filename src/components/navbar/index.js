@@ -18,41 +18,41 @@ export default function NavarComponent() {
       </Logo>
       <NavComponent>
         <div className={`links ${clicked ? "active" : ""} `}>
-          <a
+          <Link
             onClick={handleClose}
-            href="#home"
+            to="/"
             style={{ transitionDelay: "calc(.15s)" }}
           >
             Inicio
-          </a>
-          <a
+          </Link>
+          <Link
             onClick={handleClose}
-            href="#about"
+            to="/about"
             style={{ transitionDelay: "calc(.30s)" }}
           >
             Sobre Mi
-          </a>
-          <a
+          </Link>
+          <Link
             onClick={handleClose}
-            href="#skills"
+            to="/skills"
             style={{ transitionDelay: "calc(.45s)" }}
           >
             Habilidades
-          </a>
-          <a
+          </Link>
+          <Link
             onClick={handleClose}
-            href="#projects"
+            to="/projects"
             style={{ transitionDelay: "calc(.60s)" }}
           >
             Proyectos
-          </a>
-          <a
+          </Link>
+          <Link
             onClick={handleClose}
-            href="#contact"
+            to="/contact"
             style={{ transitionDelay: "calc(.75s)" }}
           >
             Contacto
-          </a>
+          </Link>
         </div>
         <div className="burger">
           <BurgerComponent clicked={clicked} handleClick={handleClick} />
@@ -200,7 +200,6 @@ const BgDiv = styled.div`
     height: 17.7rem;
     z-index: -1;
     transition: 0.3s ease;
-
 
     &.active {
       bottom: -17.7rem;
