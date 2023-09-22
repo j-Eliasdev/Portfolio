@@ -59,7 +59,12 @@ export function JavaScriptSvg() {
 export function ReactSvg() {
   return (
     <Container>
-      <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <svg
+        role="img"
+        className="react-ani"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <title>React</title>
         <path
           className="react"
@@ -171,7 +176,12 @@ export function JavaScriptTec() {
 export function ReactTec() {
   return (
     <Tecnologias>
-      <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <svg
+        role="img"
+        className="react-ani"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
         <title>React</title>
         <path
           className="react"
@@ -223,20 +233,33 @@ export function StyledComponentsTec() {
 }
 
 const Container = styled.div`
-  svg {
-    width: 65px;
-    height: 65px;
-    cursor: pointer;
-    border: 1px solid white;
-    border-radius: 10%;
-    padding: 8px;
-    transition: 0.3s;
-  }
-  svg:hover {
+  width: 65px;
+  height: 65px;
+  cursor: pointer;
+  border: 1px solid white;
+  border-radius: 10%;
+  padding: 8px;
+  transition: 0.3s;
+
+  &&:hover {
     transform: scale(1.3);
     transition: 0.6s;
   }
 
+  .react-ani {
+    animation: rotate 4s infinite linear;
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
   .node {
     fill: #339933;
   }
@@ -273,13 +296,12 @@ const Container = styled.div`
 `;
 
 const Tecnologias = styled.div`
-  svg {
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-    transition: 0.3s;
-  }
-.node {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+ 
+  .node {
     fill: #339933;
   }
   .sass {
@@ -299,6 +321,20 @@ const Tecnologias = styled.div`
   }
   .react {
     fill: #61dafb;
+  }
+  .react-ani {
+    animation: rotate 2s infinite linear;
+  }
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(180deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
   }
   .bootstrap {
     fill: #7952b3;
