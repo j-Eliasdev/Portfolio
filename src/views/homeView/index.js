@@ -26,11 +26,7 @@ function HomeView() {
         </h3>
       </div>
       <div className="col-right">
-        <img
-          className="img-landing"
-          src={Programer}
-          alt="programmer"
-        />
+        <img className="img-landing" src={Programer} alt="programmer" />
       </div>
     </Container>
   );
