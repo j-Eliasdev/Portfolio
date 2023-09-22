@@ -2,13 +2,16 @@ import React from "react";
 import { Container } from "./components";
 import { BsFillCalendarFill } from "react-icons/bs";
 import EliasImg from "../../assets/img/elias.png";
+import Atropos from "atropos/react";
 
 export default function AboutMe() {
   return (
     <Container>
       {/* Columna izquierda contiene la imagen */}
       <div className="about-col-1">
-        <img className="img-me" src={EliasImg} alt="Elias" />
+        <Atropos shadow={false} highlight={false} className="atropos">
+          <img className="img-me" src={EliasImg} alt="Elias" />
+        </Atropos>
       </div>
 
       {/* Columna derecha */}

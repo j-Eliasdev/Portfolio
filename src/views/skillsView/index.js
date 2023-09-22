@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, TecnologiasSvg, CuboContainer, Title } from "./components";
+import { Container, TecnologiasSvg, Title } from "./components";
 import {
   GitSvg,
   HtmlSvg,
@@ -13,6 +13,7 @@ import {
   StyledComponentsSvg,
   TailWindSvg,
 } from "../../components/icons";
+import DadoComponent from "../../components/dado3D/dado3d";
 
 export default function SkillsView() {
   return (
@@ -32,24 +33,7 @@ export default function SkillsView() {
           <StyledComponentsSvg />
           <TailWindSvg />
         </TecnologiasSvg>
-        <CuboContainer>
-          <div className="cubo">
-            <div className="cara" />
-            <div className="cara" />
-            <div className="cara" />
-            <div className="cara" />
-            <div className="cara" />
-            <div className="cara" />
-          </div>
-          <div className="Con-dado">
-            <div className="Square">1</div>
-            <div className="Square">2</div>
-            <div className="Square">3</div>
-            <div className="Square">4</div>
-            <div className="Square">5</div>
-            <div className="Square">6</div>
-          </div>
-        </CuboContainer>
+        <DadoComponent/>
       </Container>
     </div>
   );

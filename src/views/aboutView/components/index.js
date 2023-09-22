@@ -15,12 +15,17 @@ export const Container = styled.div`
     background-color: rgba(0, 0, 0, 0.5);
     padding: 0px 7px;
     border-radius: 10px;
+    overflow: hidden;
   }
   .about-col-2 {
     flex-basis: 60%;
   }
   .img-me {
     width: 400px;
+  }
+  .atropos {
+    width: 400px;
+    height: 524px;
   }
   .title {
     color: aqua;
@@ -87,6 +92,11 @@ export const Container = styled.div`
     .img-me {
       width: 300px;
       margin-top: 10px;
+    }
+    .atropos {
+      width: 300px;
+    height: 398px;
+
     }
   }
 
