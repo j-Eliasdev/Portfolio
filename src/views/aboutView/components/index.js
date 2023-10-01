@@ -100,8 +100,8 @@ export const Container = styled.div`
     }
   }
 
-  @media (max-width: 830px) {
-    padding: 20% 10%;
+  @media (max-width: 987px) {
+    padding-top: 150px ;
   }
   @media (max-width: 715px) {
     padding-bottom: 10px;
@@ -109,7 +109,5 @@ export const Container = styled.div`
       display: block;
     }
   }
-  @media (max-width: 490px) {
-    padding: 30% 10%;
-  }
+  
 `;

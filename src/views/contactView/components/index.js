@@ -191,17 +191,9 @@ export const Container = styled.div`
   }
   @media (max-width: 990px) {
     .sub-title{
-      margin-top: 10%;
+      margin-top: 120px;
     }
   }
-  @media (max-width: 800px) {
-    .sub-title{
-      margin-top: 20%;
-    }
-    }
-    @media (max-width: 530px) {
-    .sub-title{
-      margin-top: 30%;
-    }
-    }
+ 
+    
 `;

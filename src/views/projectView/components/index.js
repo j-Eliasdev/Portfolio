@@ -10,24 +10,20 @@ export const Container = styled.div`
     font-size: 50px;
     padding-top: 10%;
 
-    @media (max-width: 1050px) {
-      padding-top: 20%;
+    @media (max-width: 1174px) {
+     margin: 100px 0 50px 0;
     }
-    @media (max-width: 770px) {
-      margin-bottom: 10%;
-    }
-    @media (max-width: 630px) {
-      padding-top: 30%;
-    }
+   
   }
   .atropos {
     width: 300px;
     height: 400px;
   }
   .cards {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
     gap: 20px;
+    margin-bottom: 50px;
   }
 
   .card-sci {
@@ -61,12 +57,7 @@ export const Container = styled.div`
   }
 
   /* ---------------BreakPoint---------------- */
-  @media (max-width: 1199px) {
-    padding-top: 10% 0;
-  }
-  @media (max-width: 775px) {
-    padding-bottom: 20%;
-  }
+ 
 `;
 
 export const Card = styled.div`
