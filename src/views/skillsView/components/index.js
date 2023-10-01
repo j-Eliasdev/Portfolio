@@ -32,12 +32,7 @@ export const Title = styled.h1`
   z-index: 10;
   @media (max-width: 995px) {
     position: static;
-    margin: 10% 0;
+    margin: 120px 0 50px 0;
   }
-  @media (max-width: 995px) {
-    margin: 20% 0;
-  }
-  @media (max-width: 555px) {
-    margin: 30% 0;
-  }
+
 `;
